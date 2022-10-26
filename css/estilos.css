@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Titulo";
+  src: url("../fonts/Dolce Vita Light.ttf");
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+  background-color: #000000;
+}
+
+.seccion {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.caja {
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+}
+
+.texto {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+h1 {
+  width: 90%;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  font-family: "titulo";
+  color: rgb(221, 182, 73);
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.botones .boton {
+  font-family: "Poiret One", cursive;
+  padding: 0 30px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.botones .boton:hover {
+  font-weight: 900;
+}
+
+.tarot {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tarot .imagenTarot {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url(../img/tarot.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid rgb(221, 182, 73) 0.1px;
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.tarot .imagenTarot img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.tarot .cartas {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  height: 200px;
+}
+.tarot .cartas .carta {
+  cursor: pointer;
+  width: 25%;
+  margin: auto;
+  border: 1px solid rgba(238, 210, 118, 0.726);
+  display: flex;
+}
+.tarot .cartas .carta img {
+  width: 100%;
+}
+.tarot .cartas .carta:hover {
+  width: 28%;
+}
+
+.cartaElegida {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cartaElegida .imagenCarta {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+.cartaElegida .imagenCarta img {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+  border: solid rgb(255, 255, 255) 1px;
+}
+
+.creditos {
+  font-size: 16px;
+  color: rgb(221, 182, 73);
+}
+.creditos a {
+  color: rgb(221, 182, 73);
+  font-size: 16px;
+}
+
+.imagenFin {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url(../img/fin.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.imagenFin img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=estilos.css.map */
