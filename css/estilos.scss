@@ -7,9 +7,9 @@ $texto : 'Poiret One', cursive;
 
 $fondo1: #000000; 
 $fondo2: #bb9f21; 
-$color1: rgb(221, 182, 73);
+$color1: rgba(238, 210, 118, 0.726);
 $color2: rgb(255, 255, 255);
-$color3: rgb(189, 189, 189);
+$color3: rgb(221, 190, 12);
 
 body{
     width: 100%;
@@ -55,7 +55,7 @@ h1{
     color: $color1;
     letter-spacing: 2px;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p{
@@ -64,18 +64,27 @@ p{
     text-align: center;
     color: $color2;
     font-family: $texto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 a{
     color: $color2;
     font-family: $texto;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
 a:hover{
     font-weight: 600;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 20
 }
 
 .botones{
@@ -96,7 +105,7 @@ a:hover{
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
-        color: $color2;
+        color: $color1;
     }
 
     .boton:hover{
@@ -146,7 +155,7 @@ a:hover{
             cursor: pointer;
             width: 25%;
             margin: auto;
-            border: 1px solid rgba(238, 210, 118, 0.726);
+            border: .1px solid rgba(238, 210, 118, 0.726);
             display: flex;
 
             img{
@@ -181,7 +190,7 @@ a:hover{
             width: 100%;
             margin: auto;
             max-width: 300px;
-            border: solid $color2 1px;          
+            border: solid $color2 .1px;          
         }
     }
 
@@ -196,13 +205,14 @@ a:hover{
     }
 }
 
+.despedida{
+    color: $color1;
+    font-size: 20px;
+}
+
 
 .imagenFin{  
     overflow: hidden;
-    border-radius: 50%;  
-    background-image: url(../img/fin.jpg);    
-    background-size: cover;
-    background-position: center; 
     border: solid black 1px;        
     display: flex; 
     width: 70%; 
@@ -210,12 +220,8 @@ a:hover{
 
     img{
         width: 100%;
-        border-radius: 50%;                
-        animation: rotate 40s infinite linear;  
-        @keyframes rotate {
-        0%  {-webkit-transform: rotate(0deg);}
-        100% {-webkit-transform: rotate(360deg);}        
-        }            
+        border-radius: 50%;               
+          
     }   
 
 }

@@ -76,13 +76,14 @@ fetch(tarot)
 const fin = document.createElement("div");
 fin.innerHTML=`
 <div class="caja imagenFin">
-    <img src="img/inicio1.png">
+    <img src="img/fin.jpg">
 </div>
 <div class="caja texto">
-    <h1>Hasta pronto</h1>
-    <p>Hecho con ❤ por <a href="https://amarantac.github.io/portafolio/">Amaranta</a> </p> 
+    <p class="despedida">¡Hasta pronto!</p> 
                          
-</div> 
+</div>
+<p>Hecho con <span class="material-symbols-outlined">
+    favorite</span> por <a href="https://amarantac.github.io/portafolio/">Amaranta</a> </p>  
 <p class="creditos">Ilustraciones por <a href="https://www.cocorrina.com/">cocorrina</a> </p>                                                          
 `
 fin.classList.add("tarot");
